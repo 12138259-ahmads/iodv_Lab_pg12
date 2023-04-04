@@ -1,0 +1,181 @@
+<html>
+<Title>IODV Equipment & Tools Inventory System</Title>
+<center><h1>IODV Equipment Management System</h1></center>
+<style>
+.button
+{
+                    cursor: pointer;
+                    outline: 0;
+                    color: #fff;
+                    background-color: #4CAF50;
+                    border-color: #0d6efd;
+                    display: inline-block;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    text-align: center;
+                    border: 1px solid transparent;
+                    padding: 6px 12px;
+                    font-size: 16px;
+                    border-radius: .25rem;
+                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    :hover {
+                        color: #fff;
+                        background-color: #0b5ed7;
+                        border-color: #0a58ca;
+                    }
+}
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+table 			      
+{ 
+  border-spacing: 1; 
+  border-collapse: separate; 
+  background:white;
+  border-radius:6px;
+  overflow:hidden;
+  max-width:800px; 
+  width:80%;
+  margin:0 auto;
+  position:relative;
+  
+  *               { position:relative }
+  
+  td,th           { padding-left:8px}
+}
+  thead tr        { 
+    height:60px;
+    background:#FFED86;
+    font-size:16px;
+  }
+  
+  tbody tr        { height:48px; border-bottom:1px solid #E3F1D5 ;
+    &:last-child  { border:0; }
+  }
+  td {
+  text-align: center;
+  background:#D7F7F5; 
+  }
+
+body               
+{ 
+  background:white; 
+  font:400 14px 'Calibri','Arial';
+  padding:20px;
+}
+
+blockquote 
+{
+  color:white;
+  text-align:center;
+}
+</style>
+                 
+<script defer
+
+src="https://pyscript.net/alpha/pyscript.js">
+
+</script>
+<center>
+<py-script>
+#!/usr/intel/pkgs/python3/3.6.3a/bin/python
+import UsrIntel.R1
+#import mysql.connector
+import sys
+import PyMySQL
+from datetime import date
+
+today = date.today()
+print("Today's date:", today)
+#print('Hello Python')
+#a=12
+#b=12
+#print(a+b)
+
+
+
+</py-script>
+</br></br>
+<button class='button button5' onclick="window.location.href='Home.html';">Home</button>     <button class='button' onclick="window.location.href='Hsio.html';">HSIO</button>     <button class='button button2' onclick="window.location.href='DDR.html';">DDR</button>     <button class='button button3' onclick="window.location.href='PLL.html';">PLL</button>     <button class='button button4' onclick="window.location.href='RF.html';">RF</button>
+</br></br>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Equipment Name</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Manufacturer</th>
+        </tr>
+      <thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>UXR Infiniium Oscilloscope</td>
+          <td>Oscilloscope</td>
+          <td>1</td>
+          <td>Keysight</td>
+        </tr>
+           <tr>
+          <td>2</td>
+          <td>L4490A RF Switch</td>
+          <td>Switch Box</td>
+          <td>2</td>
+          <td>Agilent</td>
+        </tr>
+           <tr>
+          <td>3</td>
+          <td>L8990CA70 RF Switch</td>
+          <td>Switch Box</td>
+          <td>2</td>
+          <td>Keysight</td>
+        </tr>
+           <tr>
+          <td>4</td>
+          <td>N6705A Power Analyzer</td>
+          <td>Source Measure Unit</td>
+          <td>1</td>
+          <td>Keysight</td>
+        </tr>
+		<tr>
+          <td>5</td>
+          <td>PNAX</td>
+          <td>Network Analyzer</td>
+          <td>1</td>
+          <td>Keysight</td>
+		  <tr>
+          <td>6</td>
+          <td>Keithly 2206C</td>
+          <td>Source Measure Unit</td>
+          <td>2</td>
+          <td>Keithly</td>
+        </tr>
+		<tr>
+          <td>7</td>
+          <td>Sampling Scope</td>
+          <td>Oscilloscope</td>
+          <td>1</td>
+          <td>Keysight</td>
+        </tr>
+       <tr>
+          <td>8</td>
+          <td>Tek 50GHz Scope</td>
+          <td>Oscilloscope</td>
+          <td>1</td>
+          <td>Tektronix</td>
+        </tr>
+		<tr>
+          <td>9</td>
+          <td>IET Lab OS</td>
+          <td>Ohm Source</td>
+          <td>2</td>
+          <td>IET Lab</td>
+        </tr>
+      </tbody>
+    <table/>      
+   
+
+</center>
+</html>

@@ -1,0 +1,213 @@
+<html>
+<script>
+function myGRR() 
+{
+  //alert('show');
+  document.getElementById("GRR").style.visibility = "visible";
+}
+function myFunction() 
+{
+  document.getElementById("GRR").style.visibility = "collapse";
+}
+</script>
+<body onload="myFunction()">
+<Title>IODV Equipment & Tools Inventory System</Title>
+<center><h1>IODV Equipment Management System</h1></center>
+<style>
+.button
+{
+                    cursor: pointer;
+                    outline: 0;
+                    color: #fff;
+                    background-color: #4CAF50;
+                    border-color: #0d6efd;
+                    display: inline-block;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    text-align: center;
+                    border: 1px solid transparent;
+                    padding: 6px 12px;
+                    font-size: 16px;
+                    border-radius: .25rem;
+                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    :hover {
+                        color: #fff;
+                        background-color: #0b5ed7;
+                        border-color: #0a58ca;
+                    }
+}
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: darkorange;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: darkorange;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover,
+li:focus-within {
+  background: red;
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+table 			      
+{ 
+  border-spacing: 1; 
+  border-collapse: separate; 
+  background:white;
+  border-radius:6px;
+  overflow:hidden;
+  max-width:800px; 
+  width:55%;
+  margin:0 auto;
+  position:relative;
+  
+  *               { position:relative }
+  
+  td,th           { padding-left:8px}
+}
+td {
+  text-align: center;
+  background:#D7F7F5; 
+  }
+div{
+  width:50%;
+  }
+
+</style>
+                 
+<script defer
+
+src="https://pyscript.net/alpha/pyscript.js">
+
+</script>
+<center>
+<py-script>
+from datetime import date
+
+today = date.today()
+print("Today's date:", today)
+#print('Hello Python')
+#a=12
+#b=12
+#print(a+b)
+
+</py-script>
+</br></br>
+<button class='button button5' onclick="window.location.href='Home.html';">Home</button>     <button class='button' onclick="window.location.href='Hsio.html';">HSIO</button>     <button class='button button2' onclick="window.location.href='DDR.html';">DDR</button>     <button class='button button3' onclick="window.location.href='PLL.html';">PLL</button>     <button class='button button4' onclick="window.location.href='RF.html';">RF</button>
+</br></br>
+
+  <ul>    
+    <li><a href="#" aria-haspopup="true">Select Project</a>
+      <ul class="dropdown" aria-label="submenu">
+        <li><a href="#" onclick="myGRR()">GRR</a></li>
+        <li><a href="#">GNRD</a></li>
+        <li><a href="#">HWC</a></li>
+      </ul>
+    </li>    
+  </ul>
+<div  id='GRR'>
+<table>
+<tr>
+<th>No</th>
+<th>Item</th>
+<th>Qty</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Host PC</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Oscilloscope</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Network Analyzer</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>DC Analyzer</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Keithly</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>J-Bert</td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>MDV Board</td>
+<td>6</td>
+</tr>
+<table>
+
+
+</center>
+</body>
+</html>
